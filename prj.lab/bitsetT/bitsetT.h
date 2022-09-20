@@ -70,14 +70,14 @@ std::istream& operator>>(std::istream& istream, BitsetT<T>& data);
 
 
 template <class T>
-BitsetT<T>::BitsetT<T>(const BitsetT<T>& copy) :
+BitsetT<T>::BitsetT(const BitsetT<T>& copy) :
 	data(copy.data),
 	datasize(copy.datasize) {
 
 }; // ��� ������������� ������� �� ����� �� ���������� 2 �������� ���������: ������ � �������� �������
 
 template <class T>
-BitsetT<T>::BitsetT<T>(const int64_t size, const bool filler) :
+BitsetT<T>::BitsetT(const int64_t size, const bool filler) :
 	data(std::vector<T>()),
 	datasize(0)
 {
@@ -277,7 +277,7 @@ std::istream& operator>>(std::istream & istream, BitsetT<T>&data) {
 		buff.push_back(istream.get());
 	}
 	if (buff.size() > 0) {
-		data = BitsetT(buff);
+		data = BitsetT<T>(buff);
 	}
 	else {
 		istream.setstate(std::ios_base::failbit);
