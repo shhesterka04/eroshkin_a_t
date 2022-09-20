@@ -20,8 +20,8 @@ Complex::Complex(const double real, const double imaginary)
 }
 
 bool Complex::operator==(const Complex& rhs) const {
-	return (std::fabs(re - rhs.re) < 2 * std::numeric_limits<double>::epsilon()
-		&& std::fabs(im - rhs.im) < 2 * std::numeric_limits<double>::epsilon());
+	return (std::abs(re - rhs.re) < 2 * std::numeric_limits<double>::epsilon()
+		&& std::abs(im - rhs.im) < 2 * std::numeric_limits<double>::epsilon());
 }
 
 Complex Complex::operator-() {
@@ -66,14 +66,14 @@ Complex& Complex::operator/=(const Complex& rhs) {
 	double tempre = (re * rhs.re + im * rhs.im) / (rhs.re * rhs.re + rhs.im * rhs.im);
 	double tempim = (im * rhs.re - re * rhs.im) / (rhs.re * rhs.re + rhs.im * rhs.im);
 	if (rhs.re * rhs.re + rhs.im * rhs.im == 0)
-		throw std::invalid_argument("Ошибка: попытка деления на ноль");
+		throw std::invalid_argument("пїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ");
 	re = tempre;
 	im = tempim;
 	return *this;
 }
 Complex& Complex::operator/=(const double& rhs) {
 	if (rhs == 0)
-		throw std::invalid_argument("Ошибка: попытка деления на ноль");
+		throw std::invalid_argument("пїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ");
 	re /= rhs;
 	im /= rhs;
 	return *this;

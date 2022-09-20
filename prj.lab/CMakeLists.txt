@@ -1,7 +1,7 @@
 add_subdirectory(complex)
 add_subdirectory(rational)
 add_subdirectory(bitset)
-add_subdirectory(bitsetT)
+#add_subdirectory(bitsetT)
 add_subdirectory(qu)
 add_subdirectory(bitsetI)
 add_subdirectory(bitsetD)

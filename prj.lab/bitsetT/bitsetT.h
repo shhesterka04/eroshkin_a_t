@@ -22,8 +22,8 @@ public:
 		explicit BitHolder(int position, BitsetT& data);
 		operator bool() const;
 	private:
-		T& hold;//ссылка на инт в котором будет меняться бит
-		T bit_position;//позиция внутри  hold
+		T& hold;//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
+		T bit_position;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  hold
 	};
 
 	explicit BitsetT(const int64_t size = 0,
@@ -56,7 +56,7 @@ public:
 	int64_t size() const;
 	void resize(const int64_t size, const bool filler = false);
 private:
-	static const int size_of_type = 8 * sizeof(T);//размер типа который мы используем в битах
+	static const int size_of_type = 8 * sizeof(T);//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
 	std::vector<T> data;
 	int64_t datasize;
 
@@ -74,7 +74,7 @@ BitsetT<T>::BitsetT<T>(const BitsetT<T>& copy) :
 	data(copy.data),
 	datasize(copy.datasize) {
 
-}; // При инициализации битсета по копии мы перенимаем 2 основных параметра: размер и хранимое битсета
+}; // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 template <class T>
 BitsetT<T>::BitsetT<T>(const int64_t size, const bool filler) :
@@ -85,7 +85,7 @@ BitsetT<T>::BitsetT<T>(const int64_t size, const bool filler) :
 		throw std::logic_error("BitsetT error: sizes of constractor is nagative");
 	data = std::vector<T>((size + size_of_type - 1) / size_of_type); //!!!
 	if (filler == true)
-		fill(data.begin(), data.end(), ~T(0)); //Если флаг равен 1, то заполнить массив -1 почему -1
+		fill(data.begin(), data.end(), ~T(0)); //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ 1, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ -1 пїЅпїЅпїЅпїЅпїЅпїЅ -1
 	datasize = size;
 };
 
@@ -108,14 +108,14 @@ template <class T>
 typename BitsetT<T>::BitHolder BitsetT<T>::operator[](const T position) {
 	if (position < 0 || position >= (*this).size())
 		throw std::logic_error("BitsetT error: index_eror");
-	return BitHolder(position, (*this));// Если все ок, возращает битхолдер
+	return BitHolder(position, (*this));// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 }
 
 template <class T>
 BitsetT<T>::BitHolder::BitHolder(int position, BitsetT<T>& bitset) :
 	hold(bitset.data[position / size_of_type]),
 	bit_position(position% size_of_type)
-{}; // Инициализация битхолдера: присваиваем все, кратное биту
+{}; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 
 template <class T>
 BitsetT<T>& BitsetT<T>::operator=(const BitsetT<T>& rhs) = default;
@@ -168,8 +168,8 @@ BitsetT<T>& BitsetT<T>::operator>>=(const int64_t rhs) {
 	for (int i = datasize - rhs; i < datasize; i++)
 		(*this)[i] = 0;
 	return *this;
-}; //Так как индексация идет от старшего разряда, крутим цикл до начала вектора, выполнея смещение значений на rhs. Остатки
-//от смешения зануляем. 
+}; //пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ rhs. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+//пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. 
 
 template <class T>
 bool BitsetT<T>::operator==(const BitsetT<T>&rhs) const {
@@ -249,7 +249,7 @@ void BitsetT<T>::resize(const int64_t size, const bool filler) {
 		for (int i = pred_size; i < size; ++i)
 			(*this)[i] = bool(filler);
 
-}; //Сохраняем старый размер вектора, и создаем новый размер вектора. Расширяем вектор и вносим туда данные.
+}; //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
 
 template <class T>
 BitsetT<T>::BitsetT(const std::string & convert)
@@ -267,7 +267,7 @@ template <class T>
 std::ostream& operator<<(std::ostream & ostream, const BitsetT<T>&data) {
 	for (int i = data.size() - 1; i >= 0; i--)
 		ostream << data[i];
-	return ostream; // Выводим каждый битик
+	return ostream; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 };
 
 template <class T>
