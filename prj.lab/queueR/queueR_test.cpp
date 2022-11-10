@@ -1,8 +1,8 @@
 #include <iostream>
-#include <queueP/queueP.h>
+#include <queueR/queueR.h>
 
 int main(){
-    QueueP a = QueueP();
+    queueR a = queueR();
     a.push(3);
     a.push(2);
     a.pop();
