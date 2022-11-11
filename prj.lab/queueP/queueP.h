@@ -3,6 +3,7 @@
 #ifndef queueP_H_20221110
 #define queueP_H_20221110
 #include <iosfwd>
+#include <memory>
 
 class queueP{
 public:
@@ -16,12 +17,12 @@ public:
     const int& top() const;
 private:
     struct  Node {
-        Node(const int& value, Node* next_el = nullptr) : 
+        Node(const int& value, std::unique_ptr<Node> next_el = nullptr) : 
         val(value), next(next_el) {}
         int val;
-        Node* next;
+        std::unique_ptr<Node> next;
     };
-    Node* head;
+    std::unique_ptr<Node> head;
 
 };
 #endif
