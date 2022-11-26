@@ -1,0 +1,480 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						11
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "prj.lab",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					],
+					"jsonFile" : "directory-prj.lab-Debug-02d5af99ecd44d686785.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "prj.lab"
+				},
+				{
+					"build" : "prj.lab/complex",
+					"jsonFile" : "directory-prj.lab.complex-Debug-3d75a2ae6182fdafc221.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "prj.lab/complex",
+					"targetIndexes" : 
+					[
+						12,
+						13
+					]
+				},
+				{
+					"build" : "prj.lab/rational",
+					"jsonFile" : "directory-prj.lab.rational-Debug-4f2a13fd75c452515eac.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "prj.lab/rational",
+					"targetIndexes" : 
+					[
+						19,
+						20
+					]
+				},
+				{
+					"build" : "prj.lab/bitset",
+					"jsonFile" : "directory-prj.lab.bitset-Debug-541b74efef5e3044447f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "prj.lab/bitset",
+					"targetIndexes" : 
+					[
+						4,
+						11
+					]
+				},
+				{
+					"build" : "prj.lab/bitsetT",
+					"jsonFile" : "directory-prj.lab.bitsetT-Debug-baed53e56121b2337b9e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "prj.lab/bitsetT",
+					"targetIndexes" : 
+					[
+						9,
+						10
+					]
+				},
+				{
+					"build" : "prj.lab/qu",
+					"jsonFile" : "directory-prj.lab.qu-Debug-ba90da5155b9f28a9e1a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "prj.lab/qu",
+					"targetIndexes" : 
+					[
+						14
+					]
+				},
+				{
+					"build" : "prj.lab/bitsetI",
+					"jsonFile" : "directory-prj.lab.bitsetI-Debug-70479303f82aaf776deb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "prj.lab/bitsetI",
+					"targetIndexes" : 
+					[
+						7,
+						8
+					]
+				},
+				{
+					"build" : "prj.lab/bitsetD",
+					"jsonFile" : "directory-prj.lab.bitsetD-Debug-f1f5cd1cc8802674b1f2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "prj.lab/bitsetD",
+					"targetIndexes" : 
+					[
+						5,
+						6
+					]
+				},
+				{
+					"build" : "prj.lab/queueR",
+					"jsonFile" : "directory-prj.lab.queueR-Debug-7eab0b6e48c9d3976b71.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "prj.lab/queueR",
+					"targetIndexes" : 
+					[
+						17,
+						18
+					]
+				},
+				{
+					"build" : "prj.lab/queueP",
+					"jsonFile" : "directory-prj.lab.queueP-Debug-ef1a7f4276446be16e27.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "prj.lab/queueP",
+					"targetIndexes" : 
+					[
+						15,
+						16
+					]
+				},
+				{
+					"build" : "prj.codeforces",
+					"childIndexes" : 
+					[
+						12,
+						13,
+						14,
+						15
+					],
+					"jsonFile" : "directory-prj.codeforces-Debug-54b588f5cbccc6f173d1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "prj.codeforces"
+				},
+				{
+					"build" : "prj.codeforces/276A",
+					"jsonFile" : "directory-prj.codeforces.276A-Debug-0e66542685f2c1887b3a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 0,
+					"source" : "prj.codeforces/276A",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "prj.codeforces/999B",
+					"jsonFile" : "directory-prj.codeforces.999B-Debug-3a5bfdf5a64a215759f0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 0,
+					"source" : "prj.codeforces/999B",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "prj.codeforces/1004A",
+					"jsonFile" : "directory-prj.codeforces.1004A-Debug-0454bf604c86083be1f5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 0,
+					"source" : "prj.codeforces/1004A",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "prj.codeforces/1006A",
+					"jsonFile" : "directory-prj.codeforces.1006A-Debug-0ea7673e09ecb9527d43.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 0,
+					"source" : "prj.codeforces/1006A",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					],
+					"name" : "eroshkin_a_t",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 14,
+					"id" : "1004A::@766b8b57027039f4317d",
+					"jsonFile" : "target-1004A-Debug-919f4b908ba7fbac32d9.json",
+					"name" : "1004A",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "1006A::@872b759445896f8dc265",
+					"jsonFile" : "target-1006A-Debug-543b05c064d40e36d980.json",
+					"name" : "1006A",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "276A::@76b97aead139482baeb8",
+					"jsonFile" : "target-276A-Debug-ff4cb756e4a64399e892.json",
+					"name" : "276A",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "999B::@f9303055c4260952537e",
+					"jsonFile" : "target-999B-Debug-275a7d106f6741686811.json",
+					"name" : "999B",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "bitset::@8bae2d904ec3cb060243",
+					"jsonFile" : "target-bitset-Debug-c9762fe02a58563247c4.json",
+					"name" : "bitset",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "bitsetD::@8479cb9911122f089585",
+					"jsonFile" : "target-bitsetD-Debug-fe08e67866d5d1ab5662.json",
+					"name" : "bitsetD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "bitsetD_test::@8479cb9911122f089585",
+					"jsonFile" : "target-bitsetD_test-Debug-8b637016fdae88b16953.json",
+					"name" : "bitsetD_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "bitsetI::@13ad7a653e34a7c3603d",
+					"jsonFile" : "target-bitsetI-Debug-9ba1f7432bda6d355001.json",
+					"name" : "bitsetI",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "bitsetI_test::@13ad7a653e34a7c3603d",
+					"jsonFile" : "target-bitsetI_test-Debug-0416a2d59b8d35c4d606.json",
+					"name" : "bitsetI_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "bitsetT::@5cce1c1f31ee67095243",
+					"jsonFile" : "target-bitsetT-Debug-77f71307401c3f990682.json",
+					"name" : "bitsetT",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "bitsetT_test::@5cce1c1f31ee67095243",
+					"jsonFile" : "target-bitsetT_test-Debug-446ca58524d3f1f41ad1.json",
+					"name" : "bitsetT_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "bitset_test::@8bae2d904ec3cb060243",
+					"jsonFile" : "target-bitset_test-Debug-1df1ada0b59bc72b1953.json",
+					"name" : "bitset_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "complex::@f01986494a78af0cc1db",
+					"jsonFile" : "target-complex-Debug-06ccb42e18a7051c8380.json",
+					"name" : "complex",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "complex_test::@f01986494a78af0cc1db",
+					"jsonFile" : "target-complex_test-Debug-b416eeb85285d7b1967d.json",
+					"name" : "complex_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "qu::@32ce84985707921cd1f2",
+					"jsonFile" : "target-qu-Debug-e0ef51fc74d924a8e16c.json",
+					"name" : "qu",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "queueP::@93a5c0647fe10fa8b2c2",
+					"jsonFile" : "target-queueP-Debug-c22dd1f8f689f1942329.json",
+					"name" : "queueP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "queueP_test::@93a5c0647fe10fa8b2c2",
+					"jsonFile" : "target-queueP_test-Debug-456e8e0642f45396ba9c.json",
+					"name" : "queueP_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "queueR::@faefb6082624ba2a56a2",
+					"jsonFile" : "target-queueR-Debug-d00e4a77db1abe22f1d6.json",
+					"name" : "queueR",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "queueR_test::@faefb6082624ba2a56a2",
+					"jsonFile" : "target-queueR_test-Debug-d454c7693f71ecfaad61.json",
+					"name" : "queueR_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "rational::@fd4f4962d1a8e6d13fee",
+					"jsonFile" : "target-rational-Debug-38d93872bc715a374970.json",
+					"name" : "rational",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "rational_test::@fd4f4962d1a8e6d13fee",
+					"jsonFile" : "target-rational_test-Debug-65749af3d02a042081fd.json",
+					"name" : "rational_test",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/\u0410\u0440\u0442\u0451\u043c/source/repos/eroshkin_a_t/out/build/x64-Debug",
+		"source" : "C:/Users/\u0410\u0440\u0442\u0451\u043c/source/repos/eroshkin_a_t"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
